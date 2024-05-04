@@ -13,10 +13,10 @@ special_tokens:
 test:
   dataset: "<path to your test set>" # If you have one
 train: # Training parameters
-  model: 'olm/olm-gpt2-oct-2022' # This model can be used for testing, but the performance will not be the best (we need bigger models)
+  #model: 'olm/olm-gpt2-oct-2022' # This model can be used for testing, but the performance will not be the best (we need bigger models)
   # The models below require bigger GPUs, usually at least one A100 (80GB) or more smaller GPUs
   #model: 'stabilityai/stablelm-base-alpha-3b'
-  #model: '<path to your lama models>/llama-hf/7B' 
+  model: 'mistralai/Mistral-7B-Instruct-v0.1' 
   #model: 'facebook/opt-1.3b'
   datasets: # One or more datasets to be used for training, the csvs have to have the same columns
    - "../data/example_project_data/prepared_generated_data_for_example_project.csv" 
